@@ -11,7 +11,7 @@ app.use(express.static('public'));
 
 // GET login page
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/public/login.html');
+ res.sendFile(__dirname + '/login.html');
 });
 
 // POST login data
@@ -29,3 +29,4 @@ app.post('/login', (req, res) => {
 app.listen(port, () => {
   console.log(`Login app listening at http://localhost:${port}`);
 });
+
